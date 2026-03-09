@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gewichtsanalyse - Durchschnitte V3.07</title>
+    <title>Gewichtsanalyse - Durchschnitte V3.08</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -227,13 +227,31 @@
             padding: 6px 0;
             font-size: 0.85em;
         }
+        
+        /* Mobile Anpassungen */
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            h1 { font-size: 1.2em; }
+            .card { padding: 15px; }
+            .stats-grid { grid-template-columns: 1fr; }
+            .summary-grid { grid-template-columns: 1fr; }
+            .stat-value { font-size: 1.5em; }
+            .chart-container { height: 280px; }
+            .toggle-btn { padding: 8px 12px; font-size: 0.8em; }
+            .toggle-container { gap: 6px; }
+            .trend-table { font-size: 0.75em; display: block; overflow-x: auto; }
+            .trend-table th, .trend-table td { padding: 8px 6px; white-space: nowrap; }
+            .bar-label { width: 80px; font-size: 0.7em; }
+            .summary-row { font-size: 0.8em; }
+            .prognose-row { font-size: 0.8em; }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1>Gewichtsanalyse - Durchschnitte</h1>
-            <span class="version">V3.07</span>
+            <span class="version">V3.08</span>
         </div>
         <p class="subtitle">Hafertage vs. Rest vs. Gesamt</p>
 
